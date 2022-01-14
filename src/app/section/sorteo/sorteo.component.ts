@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sorteo',
   templateUrl: './sorteo.component.html',
   styleUrls: ['./sorteo.component.css'],
 })
-export class SorteoComponent implements OnInit {
+export class SorteoComponent {
   constructor() {}
   winner: number = -1;
   opcWinners: string[];
@@ -18,6 +18,4 @@ export class SorteoComponent implements OnInit {
   resetWin() {
     this.winner = -1;
   }
-
-  ngOnInit() {}
 }

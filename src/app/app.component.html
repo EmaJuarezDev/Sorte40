@@ -1,4 +1,19 @@
 <app-header></app-header>
 <p>Start editing to see some magic happen :)</p>
 <app-section></app-section>
-<app-footer></app-footer>
+
+<form action="">
+  <textarea
+    name="Colacao"
+    id=""
+    cols="30"
+    rows="10"
+    #opcSorteo
+    spellcheck="false"
+  ></textarea>
+  <input type="submit" value="Garito" (click)="selWin(opcSorteo.value)" />
+  <input type="submit" value="Reset" (click)="resetWin()" />
+</form>
+<p *ngIf="winner > -1">{{ opcWinners[winner] }}</p>
+
+<!-- <app-footer></app-footer> -->
